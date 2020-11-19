@@ -1,0 +1,8 @@
+.wrapper {
+    background-color: #fff;
+    // This is call to the mc mixin (margin-centre)
+    // it center the element left and right on the
+    // page..
+    @include mc(false);
+    max-width: $siteWidth;
+}

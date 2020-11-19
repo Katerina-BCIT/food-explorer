@@ -1,1 +1,26 @@
 // Place your Sass imports here...
+
+// Variables
+@import "vars";
+@import "mixins";
+
+// Font Awesome Imports
+@import "fontawesome-scss/fontawesome";
+@import "fontawesome-scss/brands";
+@import "fontawesome-scss/screen-reader";
+
+// Resets
+@import "reset";
+@import "typography";
+
+// HTML Elements
+@import "body";
+@import "wrapper";
+@import "header";
+@import "nav";
+@import "social";
+@import "sections";
+@import "posts";
+@import "sidebar";
+@import "recipes";
+@import "footer";

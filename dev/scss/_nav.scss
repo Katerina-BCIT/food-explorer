@@ -1,0 +1,12 @@
+// Nav Styles
+.main-nav {
+    display: none;
+    .show-nav & {
+        display: block;
+    }
+
+    @include mq($mobileMedium){
+        display: block;
+    }
+
+}
