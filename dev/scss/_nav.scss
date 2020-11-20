@@ -9,4 +9,158 @@
         display: block;
     }
 
+}// Nav Styles
+.main-nav {
+    display: none;
+    background-color: $blueRegular;
+    .show-nav & {
+        display: block;
+    }
+ }
+
+  
+ #nav-ul
+ { 
+
+    li 
+    { 
+        
+        text-align: center;
+        line-height: 30px;
+        a:not(.social-link)
+        {
+          color: white;
+        }
+      
+        a:hover{
+            color: $blueRegular;
+           
+            
+        }
+    }
+
+    li:not(.social-link-list-item)
+    {
+        border-top: solid 2px $blueDark;
+    }
+ }
+
+ .social-links-mobile ul{
+     border: solid 1px $blueRegular;
+     display: flex;
+    justify-content: center;
+     background-color: white;
+    li{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+ }
+
+.search-bar-desktop
+{
+    display: none;
 }
+
+ ul{
+     padding: 0px;
+ }
+@include mq($tabletSmall)
+{
+    .main-nav{
+       display:block;
+    }
+    .btn-main-nav{
+        display: none;
+    }
+    #nav-ul{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        line-height: 40px;
+        background-color: $blueRegular;
+                            
+            li
+            {
+                flex:1;
+               text-align: center;
+              
+                a{
+                color: white;
+           
+                }
+               
+    }
+   
+
+    .social-links-mobile{
+        display: none;
+      
+    }
+}
+
+}
+
+@include mq($desktop){
+    .main-nav{
+        display: block;
+    }
+
+    .social-link-list-item{
+        display: none;
+    }
+
+    #nav-ul{
+        display: flex;
+        margin-left: 100px;
+        margin-right: 100px;
+        justify-content: center;
+        align-items: center;
+        background-color: $blueRegular;
+                            
+            li
+            {
+                flex:1;
+               text-align: center;
+              
+                a{
+                color: white;
+           
+                }
+            
+        }
+    }
+    
+    .btn-main-nav{
+        display: none;
+    }
+ 
+    .search-bar-desktop
+    {    
+      display: flex;
+        input[type=text] 
+        {
+              background-color: lightgray;
+              border: none;
+              padding-left: 10px;
+              border-top: solid 3px grey;
+              border-bottom: solid 3px grey;
+
+        }
+    
+        img{
+            background-color: lightgray;
+            border: none;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-top: solid 3px grey;
+            border-bottom: solid 3px grey;
+            
+        }
+      
+    }
+}
+
