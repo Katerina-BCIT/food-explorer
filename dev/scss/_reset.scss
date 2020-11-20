@@ -1,10 +1,15 @@
+/* Resets */
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-img{
-    max-width: 100%;
-    height: auto;
+  box-sizing: border-box;
+  
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Image reset */
+img {
+  max-width: 100%;
+  height: auto;
 }
