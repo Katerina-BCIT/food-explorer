@@ -1,0 +1,26 @@
+.cuisines-heading{
+padding: 13px;
+    padding-left: 10px;
+    background-color: $blueRegular;
+    color:white;
+    margin: 0px;
+}
+.cuisine-list 
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 165px;
+        margin: 0px;
+        padding: 0 5px;
+        li{
+        background-color: #e9e9e9;
+        list-style: none;
+         
+        a {
+        text-decoration: none;
+        color: black;
+        margin: 10px;   
+        }
+    }
+}
