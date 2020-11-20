@@ -1,12 +1,16 @@
-footer {
-    color: white;
-    justify-content: center;
-    background-color: rgb(5, 92, 149);
-    text-align: center;
-    border-top: solid 1px #ccc;
+.container {
+    /* margin: 5px; */
+    max-width: 800px;
     width: 100%;
-    font-family: "PT Serif", serif;
-    font-size: 12px;
+    padding: 10px;
+    box-sizing: border-box;
   }
 
-  
+.footer {
+    font-size: 14px;
+    font-family: "PT Serif", serif;
+    padding: 10px;
+    background-color: rgb(5, 92, 149);
+    color: white;
+    text-align: center;
+}
