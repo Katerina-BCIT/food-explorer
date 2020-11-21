@@ -43,11 +43,13 @@ header{
       padding: 5px;
       background-color: lightgray;
         display: flex;
-        border: solid 2px grey;
+        border: solid 3px rgb(177, 172, 172);
         border-radius: 5px;
        margin: 10px;
         input[type=text] 
         {
+            
+            max-width: 120px;
               background-color: lightgray;
               border: none;
                outline: none;
@@ -107,4 +109,11 @@ header{
 }
 
 
+}
+
+// Search Bar
+input{
+    background-image: url("../images/search.png");
+    background-position: center right 10px;
+     background-repeat: no-repeat;
 }
