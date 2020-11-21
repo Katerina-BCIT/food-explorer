@@ -1,11 +1,10 @@
 // Nav Styles
-.main-nav {
+.main-nav 
+{
     background-color: $blueDark;
     display: none;
     .show-nav & {
     display: block;
-
-
     }
    
 }
@@ -13,146 +12,134 @@
 
 .search-bar-desktop
 {    
-   
-  display: flex;
-  justify-content: space-between;
- border: solid 1px grey;
+    border: solid 1px grey;
+    background-color: lightgray;
     input[type=text] 
     {
-          background-color: lightgray;
-          flex: 1;
-          border: none;
-          padding-left: 10px;
-
-    }
-
-    img{
+        line-height: 40px;
+        display: block;
+        width: 100%;
         background-color: lightgray;
         border: none;
-        padding-right: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-      
-        
-    }
-  
+        padding-left: 10px;
+    }  
 }
+
  #nav-ul
  {
-      background-color: $blueRegular;
-         margin: 0;
-
-    li 
-    { 
-        text-align: center;
-        line-height: 30px;
-        a:not(.social-link)
-        {
-          color: white;
-          display: block;
- 
+        background-color: $blueRegular;
+        margin: 0;
+        li 
+        { 
+            text-align: center;
+            line-height: 40px;
+                a:not(.social-link)
+                {
+                color: white;
+                display: block;
+                }
+                a:hover
+                {
+                color: $blueRegular;
+                background-color: white;
+                }    
         }
-      
-         a:hover{
-             color: $blueRegular;
-          background-color: white;
-    
-         }
-        
-    }
 
-    li:not(.search)
-    {
-        border-top: solid 2px $blueDark;
-    }
+        .nav-li
+        {
+            border-top: solid 2px $blueDark;
+        }
  }
 
- .social-links-mobile ul{
-     border: solid 1px $blueRegular;
-     display: flex;
+.social-links-mobile ul
+{
+    border: solid 1px $blueRegular;
+    display: flex;
     justify-content: center;
-     background-color: white;
-    li{
+    background-color: white;
+    li
+    {
         margin-left: 10px;
         margin-right: 10px;
-    }
-    
- }
+    } 
+}
 
-
-
- ul{
+ ul
+ {
      padding: 0px;
  }
+
 @include mq($tabletSmall)
 {
-    .main-nav{
-       display:block; 
+    .main-nav
+    {
+        display:block; 
     }
-    .btn-main-nav{
+    .btn-main-nav
+    {
         display: none;
     }
-    #nav-ul{
+    #nav-ul
+    {
         display: flex;
         margin: auto;
         justify-content: center;
         align-items: center;
-        margin: 10px;
-        line-height: 40px;
-                           
-            li
+        margin: 10px;                
+        li
+        {
+            flex:1;
+            text-align: center;                 
+            a
             {
-                flex:1;
-               text-align: center;
-                  
-                a{
                 color: white;
-           
-                }
-                li:not(.social-link-list-item)
-                {
-                    border-top: none
-                }
-               
-    }
-   .search{
-       display: none;
-   }
+            }     
+        }
 
-    .social-link-list-item{
+        .nav-li
+        {
+            border:none;
+        }
+        .search
+        {
         display: none;
-      
+        }
+
+        .social-link-list-item
+        {
+            display: none;
+        }
     }
-}
 
 }
 
 @include mq($desktop){
-    .main-nav{
+    .main-nav
+    {
         display: block;
     }
 
-    .social-link-list-item{
+    .social-link-list-item
+    {
         display: none;
     }
 
-    #nav-ul{
+    #nav-ul
+    {
         display: flex;
         margin-left: 100px;
         margin-right: 100px;
         justify-content: center;
         align-items: center;
-                           
-            li
+        li
+        {
+            flex:1;
+            text-align: center;
+            a
             {
-                flex:1;
-               text-align: center;
-              
-                a{
                 color: white;
            
-                }
-            
+            }  
         }
 
         .search
@@ -162,34 +149,23 @@
         }
     }
     
-    .btn-main-nav{
+    .btn-main-nav
+    {
         display: none;
     }
  
     .search-bar-desktop
     {    
-      display: flex;
         input[type=text] 
         {
               background-color: lightgray;
               border: none;
               padding-left: 10px;
-              border-top: solid 3px grey;
-              border-bottom: solid 3px grey;
+              border-top: solid 3px rgb(202, 194, 194);
+              border-bottom: solid 3px rgb(202, 194, 194);
 
         }
-    
-        img{
-            background-color: lightgray;
-            border: none;
-            padding-right: 10px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            border-top: solid 3px grey;
-            border-bottom: solid 3px grey;
-            
-        }
-      
+
     }
 }
 

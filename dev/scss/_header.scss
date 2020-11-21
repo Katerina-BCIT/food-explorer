@@ -1,26 +1,30 @@
-header{
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 6px;
+header
+{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 6px;
+        background-color: #f9f9f9;
+        a
+        {
+            text-decoration: none;
+        }
+        li
+        {
+            list-style-type: none;
+        }
 
-
-    a{
-        text-decoration: none;
-    }
-    li{
-        list-style-type: none;
-    }
-
-    a:hover, a:active, a:visited
-    {
-        color: $blueRegular;
-    }
+        a:hover, a:active, a:visited
+        {
+            color: $blueRegular;
+        }
 }
 
-#top{
+#top
+{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .search-bar-tablet
@@ -35,85 +39,72 @@ header{
 
 @include mq($tabletSmall)
 {
-
     .search-bar-tablet
     {
-
-
-      padding: 5px;
-      background-color: lightgray;
-        display: flex;
-        border: solid 3px rgb(177, 172, 172);
+        background-color: lightgray;
+        display: block;
+        border: solid 3px rgb(207, 202, 202);
         border-radius: 5px;
-       margin: 10px;
+        height: 35px;
         input[type=text] 
         {
-            
-            max-width: 120px;
-              background-color: lightgray;
-              border: none;
-               outline: none;
-        }
-    
-        img{
-        
+            height: 100%;
+            width: 100%;
+            padding-left: 10px;
             background-color: lightgray;
             border: none;
-        
-            
+            outline: none;
         }
     }
-
 }
 
 @include mq($tabletLarge)
 {
-    .social-links-desktop{
+    .social-links-desktop
+    {
         order: 1;
         display: block;
-        ul{
-        display: flex;
-        color: $blueRegular;
-        li{
-         
-            margin-left: 10px;
-          }
+        ul
+        {
+            display: flex;
+            color: $blueRegular;
+            li
+            {
+                margin-left: 15px;
+            }
         }
     }
 }
 
 @include mq($desktop)
 {
-.header-top-row{
-    padding-left: 100px;
-    padding-right: 100px;
-    display: flex;
-    justify-content: space-between;
-}
+    .header-top-row
+    {
+        padding-left: 100px;
+        padding-right: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
 
-.social-links-desktop{
-    display: block;
-    ul{
-    display: flex;
-    color: $blueRegular;
-    li{
-        flex:1;
-        margin-left: 10px;
-       
-      }
+    .social-links-desktop
+    {
+        display: block;
+        ul
+        {
+            display: flex;
+            color: $blueRegular;
+            li
+            {
+                flex:1;
+                margin-left: 10px;
+            
+            }
+        }
+    }
+
+    .search-bar-tablet
+    {
+        display: none;
     }
 }
 
-.search-bar-tablet{
-    display: none;
-}
-
-
-}
-
-// Search Bar
-input{
-    background-image: url("../images/search.png");
-    background-position: center right 10px;
-     background-repeat: no-repeat;
-}
