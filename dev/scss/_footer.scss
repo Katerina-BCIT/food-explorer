@@ -1,6 +1,5 @@
 .footer {
     font-size: 14px;
-    font-family: "PT Serif", serif;
     padding: 10px;
     margin: 10px 10px 10px 0;
     background-color: rgb(5, 92, 149);
@@ -8,5 +7,15 @@
     text-align: center;
     width: 100%;
     box-sizing: border-box;
+
+}
+
+@include mq($tabletSmall){
+    .footer{
+        font-size: 12px;
+        p{
+            margin: 0;
+        }
+    }
 }
 
