@@ -16,6 +16,32 @@
         p{
             margin: 0;
         }
+
+@include mq($tabletLarge){
+    .footer{
+        font-size: 12px;
+        p{
+            margin: 0;
+        }
+
+@include mq($desktop){
+    .footer{
+        font-size: 12px;
+        p{
+            margin: 0;
+
+        }
+@include mq($desktopLarge){
+    .footer{
+        font-size: 12px;
+        p{
+            margin: 0;
+        }
     }
 }
-
+}
+}
+}
+}
+}
+}
