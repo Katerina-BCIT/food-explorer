@@ -1,5 +1,5 @@
 .recipes{
-    padding: 0 10px;
+    padding:0 10px 0 10px;
 
     .recipes-heading{
         background-color: $blueRegular;
@@ -16,13 +16,13 @@
     .recipe-list-item{
         display: flex;
         align-items: center;
-        background-color: white;
+        background-color: #f9f9f9;
         padding: 8px;
     }
     .recipe-list-item1{
         display: flex;
         align-items: center;
-        background-color: lightgrey;
+        background-color: #e9e9e9;
         padding: 8px;
     }
     figure{
@@ -40,6 +40,9 @@
         margin-bottom: 0;
         font-size: 1rem;
         font-weight: 300;
+    }
+    h2{
+        font-size: 1.3rem;
     }
 }
     

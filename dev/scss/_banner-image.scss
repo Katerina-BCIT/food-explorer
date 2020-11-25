@@ -1,5 +1,5 @@
 .banner-images{
-    padding: 0 10px;
+    padding: 10px;
     margin: 0;
 }   
     .box {
@@ -17,12 +17,7 @@
         h2{
         color: white;
         }
-@media (min-width: 500px){
-    .box-02 img{
-        width: auto;
-    }  
-    .box-03 img{
-            width: auto;
-        }
+@include mq($tabletSmall){
+    
     }
     

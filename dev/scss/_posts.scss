@@ -6,7 +6,6 @@
         background-color: white;
         padding: 10px;
         position: relative;
-        //height: 100%;
         margin: 0 0 8px 0;
         
         .post-heading{
@@ -39,6 +38,9 @@
                 bottom: 0px;
                 right: 0px;
                 margin: 40px 10px 10px 0;
+                }
+                a{
+                    padding: 10px;
                 }
             }
         }
