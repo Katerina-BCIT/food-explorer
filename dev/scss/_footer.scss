@@ -1,3 +1,10 @@
+footer {
+
+    @include mc(false);
+    max-width: 1200px;
+}
+
+
 .footer {
     font-size: 14px;
     padding: 10px;
