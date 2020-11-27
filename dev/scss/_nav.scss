@@ -1,172 +1,156 @@
 // Nav Styles
-.main-nav 
-{
+.main-nav {
     background-color: $blueDark;
     display: none;
     .show-nav & {
-    display: block;
+        display: block;
     }
-   
 }
 
+.btn-main-nav {
+    margin-left: 40px;
+}
 
-.search-bar-desktop
-{    
+.search-bar-desktop {
     border: solid 1px grey;
     background-color: lightgray;
-    input[type=text] 
-    {
+    input[type="text"] {
         line-height: 40px;
         display: block;
         width: 100%;
         background-color: lightgray;
         border: none;
         padding-left: 10px;
-    }  
+    }
 }
 
- #nav-ul
- {
-        background-color: $blueRegular;
-        margin: 0;
-        li 
-        { 
-            text-align: center;
-            line-height: 40px;
-                a:not(.social-link)
-                {
-                color: white;
-                display: block;
-                }
-                a:hover
-                {
-                color: $blueRegular;
-                background-color: white;
-                }    
+#nav-ul {
+    margin: 0;
+    background-color: $blueRegular;
+    max-width: 1000px;
+    li {
+        text-align: center;
+        line-height: 40px;
+        a:not(.social-link) {
+            color: white;
+            display: block;
         }
-
-        .nav-li
-        {
-            border-top: solid 2px $blueDark;
+        a:hover {
+            color: $blueRegular;
+            background-color: white;
         }
- }
+    }
 
-.social-links-mobile ul
-{
+    .nav-li {
+        border-top: solid 2px $blueDark;
+    }
+}
+
+.social-links-mobile ul {
     border: solid 1px $blueRegular;
     display: flex;
     justify-content: center;
     background-color: white;
-    li
-    {
+    li {
         margin-left: 10px;
         margin-right: 10px;
-    } 
+    }
 }
 
- ul
- {
-     padding: 0px;
- }
+ul {
+    padding: 0px;
+}
 
-@include mq($tabletSmall)
-{
-    .main-nav
-    {
-        display:block; 
+@include mq($tabletSmall) {
+    .main-nav {
+        display: block;
     }
-    .btn-main-nav
-    {
+    .btn-main-nav {
         display: none;
     }
-    #nav-ul
-    {
+    #nav-ul {
         display: flex;
         margin: auto;
         justify-content: center;
         align-items: center;
-        margin: 10px;                
-        li
-        {
-            flex:1;
-            text-align: center;                 
-            a
-            {
+        margin: 10px;
+        li {
+            flex: 1;
+            text-align: center;
+            a {
                 color: white;
-            }     
+            }
         }
 
-        .nav-li
-        {
-            border:none;
+        .nav-li {
+            border: none;
         }
-        .search
-        {
-        display: none;
+        .search {
+            display: none;
         }
 
-        .social-link-list-item
-        {
+        .social-link-list-item {
             display: none;
         }
     }
-
 }
 
-@include mq($desktop){
-    .main-nav
-    {
+@media (min-width: 670px){
+    #nav-ul{
+        font-size: large;
+    }
+}
+
+@include mq($desktop) {
+    .main-nav {
         display: block;
     }
 
-    .social-link-list-item
-    {
+    .social-link-list-item {
         display: none;
     }
 
-    #nav-ul
-    {
+    #nav-ul {
         display: flex;
-        margin-left: 100px;
-        margin-right: 100px;
+        margin: 0 10px;
         justify-content: center;
         align-items: center;
-        li
-        {
-            flex:1;
+  
+        li {
+            flex: 1;
             text-align: center;
-            a
-            {
+
+            a {
                 color: white;
-           
-            }  
+            }
         }
 
-        .search
-        {
+        .search {
             display: block;
             order: 2;
             flex: 2;
         }
     }
-    
-    .btn-main-nav
-    {
+
+    .btn-main-nav {
         display: none;
     }
- 
-    .search-bar-desktop
-    {    
-        input[type=text] 
-        {
-              background-color: lightgray;
-              border: none;
-              padding-left: 10px;
-              border-top: solid 3px rgb(202, 194, 194);
-              border-bottom: solid 3px rgb(202, 194, 194);
 
+    .search-bar-desktop {
+        input[type="text"] {
+            line-height: 30px;
+            background-color: lightgray;
+            border: none;
+            outline: none;
+            padding-left: 10px;
+            border-top: solid 3px rgb(202, 194, 194);
+            border-bottom: solid 3px rgb(202, 194, 194);
         }
-
     }
 }
 
+@include mq($desktopLarge){
+    #nav-ul{
+        margin: 0 auto;
+    }
+}

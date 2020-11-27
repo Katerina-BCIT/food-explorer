@@ -52,3 +52,12 @@
         padding: 20px 0 20px 0;
     }
 }
+
+@media (min-width: $desktop){
+    .blog-posts{
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+}
+ 

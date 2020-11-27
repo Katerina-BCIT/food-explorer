@@ -2,6 +2,10 @@
 .cuisines{
     padding: 10px;
     margin: 0;
+    @include mq($desktop)
+    {           
+        padding-right: 0px;
+    }
 }
 
     .cuisines-heading{
@@ -59,7 +63,8 @@
     }
 
     @include mq($desktop)
-        {
+        {           
+              
         display: block;
         li {
             &:nth-child(1n){

@@ -1,9 +1,26 @@
 // Write your JavaScript here...
 
-const $body = $('body');
-const $btnMainNav = $('#btn-main-nav');
+// Show Hide Nav
+const $btnShowNav = $('#btn-main-nav');
+const $navMain = $('#main-nav');
 
-$btnMainNav.click(function(e){
+//$navMain.hide();
+
+$btnShowNav.click(function(e){
     e.preventDefault();
-    $body.toggleClass('show-nav');
+    $navMain.slideToggle();
 });
+
+const mql = window.matchMedia('(min-width: 500px)');
+
+function screenTest(e) {
+  if (e.matches) {
+    $navMain.removeAttr('style');
+  }else {
+    $navMain.hide();
+  } 
+}
+
+mql.addListener(screenTest);
+
+
