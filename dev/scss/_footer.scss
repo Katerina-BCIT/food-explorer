@@ -1,9 +1,7 @@
 footer {
-
     @include mc(false);
-    max-width: 1200px;
+    max-width: 100%;
 }
-
 
 .footer {
     font-size: 14px;
@@ -14,41 +12,39 @@ footer {
     text-align: center;
     width: 100%;
     box-sizing: border-box;
-
 }
 
-@include mq($tabletSmall){
-    .footer{
+@include mq($tabletSmall) {
+    .footer {
         font-size: 12px;
-        p{
+        p {
             margin: 0;
         }
 
-@include mq($tabletLarge){
-    .footer{
-        font-size: 12px;
-        p{
-            margin: 0;
-        }
+        @include mq($tabletLarge) {
+            .footer {
+                font-size: 12px;
+                p {
+                    margin: 0;
+                }
 
-@include mq($desktop){
-    .footer{
-        font-size: 12px;
-        p{
-            margin: 0;
-
-        }
-@include mq($desktopLarge){
-    .footer{
-        font-size: 12px;
-        p{
-            margin: 0;
+                @include mq($desktop) {
+                    .footer {
+                        font-size: 12px;
+                        p {
+                            margin: 0;
+                        }
+                        @include mq($desktopLarge) {
+                            .footer {
+                                font-size: 12px;
+                                p {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
-}
-}
-}
-}
-}
-}
 }

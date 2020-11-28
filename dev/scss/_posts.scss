@@ -1,35 +1,39 @@
-.blog-posts{
+.blog-posts {
     padding: 0 10px;
     margin: 0;
 
-    .post{
+    .post {
         background-color: white;
         padding: 10px;
         position: relative;
         margin: 0 0 8px 0;
-        
-        .post-heading{
-            color:#1a71a9;
+
+        h2 {
+            font-size: 30px;
+        }
+        .post-heading {
+            color: #1a71a9;
             font-size: 2 rem;
+
             margin: 0 auto;
             width: 100%;
         }
-        .post-content{
-            
-            p{
+        .post-content {
+            p {
                 margin-bottom: 30px;
                 line-height: 1.2;
+                font-size: 15px;
                 display: block;
-                
             }
-            img{
+            img {
                 margin: 0 0 10px 0;
+                width: 100%;
             }
-            .btn-read-more{
+            .btn-read-more {
                 color: white;
                 background-color: #1a71a9;
                 border: none;
-                text-decoration:none;
+                text-decoration: none;
                 width: 120px;
                 font-weight: 700;
                 padding: 10px;
@@ -38,26 +42,67 @@
                 bottom: 0px;
                 right: 0px;
                 margin: 40px 10px 10px 0;
-                }
             }
         }
+    }
 }
-.older-posts{
+.older-posts {
     margin: 8px 0;
     display: block;
     padding: 30px 0 40px 0;
 }
-@include mq($tabletLarge){
-    .older-posts{
+
+@include mq($tabletSmall) {
+    .blog-posts {
+        .post {
+            .post-content {
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@include mq($tabletLarge) {
+    .older-posts {
         padding: 20px 0 20px 0;
     }
-}
 
-@media (min-width: $desktop){
-    .blog-posts{
-        padding-left: 0;
-        padding-right: 0;
-
+    .blog-posts {
+        .post {
+            h2 {
+                font-size: 40px;
+            }
+        }
+    }
+    .blog-posts {
+        .post {
+            .post-content {
+                p {
+                    font-size: 14.5px;
+                }
+            }
+        }
     }
 }
- 
+
+@media (min-width: $desktop) {
+    .blog-posts {
+        padding-left: 0;
+        padding-right: 0;
+        .post {
+            .post-content {
+                p {
+                    font-size: 16.5px;
+                }
+            }
+        }
+    }
+
+    .post {
+        h2 {
+            font-size: 40px;
+        }
+    }
+}

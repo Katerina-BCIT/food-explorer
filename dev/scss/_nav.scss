@@ -73,7 +73,7 @@ ul {
         margin: auto;
         justify-content: center;
         align-items: center;
-        margin: 10px;
+        margin: 10px 10px 0 10px;
         li {
             flex: 1;
             text-align: center;
@@ -95,8 +95,8 @@ ul {
     }
 }
 
-@media (min-width: 670px){
-    #nav-ul{
+@media (min-width: 670px) {
+    #nav-ul {
         font-size: large;
     }
 }
@@ -115,7 +115,7 @@ ul {
         margin: 0 10px;
         justify-content: center;
         align-items: center;
-  
+
         li {
             flex: 1;
             text-align: center;
@@ -149,8 +149,8 @@ ul {
     }
 }
 
-@include mq($desktopLarge){
-    #nav-ul{
+@include mq($desktopLarge) {
+    #nav-ul {
         margin: 0 auto;
     }
 }

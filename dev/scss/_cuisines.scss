@@ -1,73 +1,65 @@
-
-.cuisines{
+.cuisines {
     padding: 10px;
     margin: 0;
-    @include mq($desktop)
-    {           
+    @include mq($desktop) {
         padding-right: 0px;
     }
 }
 
-    .cuisines-heading{
-        background-color: #1a71a9;
-        padding: 8px;
-        color: white;
-        width: 100%;
-        margin: auto;
+.cuisines-heading {
+    background-color: #1a71a9;
+    padding: 8px;
+    color: white;
+    width: 100%;
+    margin: auto;
+}
+.cuisine-list {
+    margin: 0;
+    padding: 0 5px;
+    background-color: #f9f9f9;
+
+    li {
+        list-style: none;
+        line-height: 2;
     }
-    .cuisine-list {
-      
-        margin: 0;
-        padding: 0 5px;
-        background-color: #f9f9f9;
-        
+
+    a {
+        text-decoration: none;
+        color: black;
+        margin: 10px 0;
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+    li {
+        &:nth-child(odd) {
+            width: 160px;
+        }
+        &:nth-child(even) {
+            width: calc(100% - 160px);
+        }
+    }
+
+    @include mq($tabletSmall) {
         li {
             list-style: none;
-            line-height: 2 ;
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-            margin: 10px 0;   
-        }
-
-    
-            display: flex;
-            flex-wrap: wrap;
-            li{
-                
-                &:nth-child(odd){
-                    width: 160px;
-                }
-                &:nth-child(even){
-                    width: calc(100% - 160px);
-                }
-            }  
-          
-    @include mq($tabletSmall)
-        {
-        li{
-            list-style: none;
-            line-height: 2 ;
-           // &:nth-child(odd){
+            line-height: 2;
+            // &:nth-child(odd){
             //    width: 170px;
             //}
-            &:nth-child(1n){
+            &:nth-child(1n) {
                 width: 160px;
             }
-            &:nth-child(3n){
-                width: calc(100% - 320px); 
+            &:nth-child(3n) {
+                width: calc(100% - 320px);
             }
-        }    
+        }
     }
 
-    @include mq($desktop)
-        {           
-              
+    @include mq($desktop) {
         display: block;
         li {
-            &:nth-child(1n){
+            &:nth-child(1n) {
                 width: auto;
             }
         }

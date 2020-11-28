@@ -1,26 +1,26 @@
 // Main grid for desktop version
 
- @media (min-width: $desktop){
-  
-#grid{
-    display: grid;
-    width: 100%;
-    margin: 0;
-    grid-template-columns: 77% 23%;
-}
+@media (min-width: $desktop) {
+    #grid {
+        margin-left: 10px;
+        margin-right: 10px;
+        display: grid;
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 77% 23%;
+    }
 
-.banner-images{
-    grid-column: 1;
-    grid-row: 1/2;
-}
+    .banner-images {
+        grid-column: 1;
+        grid-row: 1/2;
+    }
 
-.blog-posts{
-    grid-column: 1;
-    grid-row: 2/5;
+    .blog-posts {
+        grid-column: 1;
+        grid-row: 2/5;
+    }
+    .sidebar {
+        grid-column: 2;
+        grid-row: 1/3;
+    }
 }
-.sidebar{
-    grid-column: 2;
-    grid-row: 1/3;
-}
-
-}   

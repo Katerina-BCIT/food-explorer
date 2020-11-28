@@ -1,18 +1,14 @@
-.fab
-{
+.fab {
     color: $blueRegular;
     font-size: larger;
 }
 
-.fab:hover
-{
+.fab:hover {
     color: grey;
 }
 
-@include mq($tabletLarge)
-{
-    .fab
-    {
+@include mq($tabletLarge) {
+    .fab {
         font-size: x-large;
     }
 }

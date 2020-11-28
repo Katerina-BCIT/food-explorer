@@ -2,8 +2,8 @@
 
 // MC
 // Centres an element with margin
-@mixin mc($isImage: false, $top: 0, $bottom: 0){
-    @if($isImage == true){
+@mixin mc($isImage: false, $top: 0, $bottom: 0) {
+    @if ($isImage == true) {
         display: block;
     }
     margin: {
@@ -15,8 +15,8 @@
 }
 
 // Media Query Mixins
-@mixin mq($width){
-    @media (min-width: $width){
+@mixin mq($width) {
+    @media (min-width: $width) {
         @content;
     }
 }

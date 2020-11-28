@@ -1,10 +1,9 @@
-header{
-
+header {
     @include mc(false);
     max-width: 100%;
 }
 
-.header-top-row{
+.header-top-row {
     max-width: 1000px;
     margin: 0 auto;
     padding-left: 10px;
@@ -13,53 +12,45 @@ header{
     padding-bottom: 6px;
 }
 
-header
-{    
-        background-color: #f9f9f9;
-        a
-        {
-            text-decoration: none;
-        }
-        li
-        {
-            list-style-type: none;
-        }
+header {
+    background-color: #f9f9f9;
+    a {
+        text-decoration: none;
+    }
+    li {
+        list-style-type: none;
+    }
 
-        a:hover, a:active, a:visited
-        {
-            color: $blueRegular;
-        }
+    a:hover,
+    a:active,
+    a:visited {
+        color: $blueRegular;
+    }
 }
 
-#top
-{
+#top {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
 }
 
-.search-bar-tablet
-{
+.search-bar-tablet {
     display: none;
 }
 
-.social-links-desktop
-{
+.social-links-desktop {
     display: none;
 }
 
-@include mq($tabletSmall)
-{
-    .search-bar-tablet
-    {
+@include mq($tabletSmall) {
+    .search-bar-tablet {
         background-color: lightgray;
         display: block;
         border: solid 3px rgb(207, 202, 202);
         border-radius: 5px;
         height: 35px;
         margin-left: 40px;
-        input[type=text] 
-        {
+        input[type="text"] {
             height: 100%;
             width: 100%;
             padding-left: 10px;
@@ -70,52 +61,39 @@ header
     }
 }
 
-@include mq($tabletLarge)
-{
-    .social-links-desktop
-    {
+@include mq($tabletLarge) {
+    .social-links-desktop {
         order: 1;
         display: block;
-        ul
-        {
+        ul {
             display: flex;
             color: $blueRegular;
-            li
-            {
+            li {
                 margin-left: 15px;
             }
         }
     }
 }
 
-@include mq($desktop)
-{
-    .header-top-row
-    {
+@include mq($desktop) {
+    .header-top-row {
         display: flex;
         justify-content: space-between;
     }
 
-    .social-links-desktop
-    {
+    .social-links-desktop {
         display: block;
-        ul
-        {
+        ul {
             display: flex;
             color: $blueRegular;
-            li
-            {
-                flex:1;
+            li {
+                flex: 1;
                 margin-left: 20px;
-            
             }
         }
     }
 
-    .search-bar-tablet
-    {
+    .search-bar-tablet {
         display: none;
     }
 }
-
-

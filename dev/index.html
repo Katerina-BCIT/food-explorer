@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,17 @@
 	<!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE -->
 	<!-- Put Google Fonts Here -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300&display=swap"
+		rel="stylesheet">
 	<!-- end Google Fonts -->
 
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
 	<link rel="stylesheet" href="styles/styles.css?cb=1">
 </head>
+
 <body>
-<!-- Put your HTML code here... -->
+	<!-- Put your HTML code here... -->
 
 	<header>
 		<div id="top" class="header-top-row">
@@ -48,8 +52,8 @@
 				</ul>
 			</div>
 			<div class="search-bar search-bar-tablet">
-				<input type="text" id="search" name="search" placeholder="Search">
-		</div>
+				<input type="text" id="search-tablet" name="search" placeholder="Search">
+			</div>
 			<a href="#main-nav" class="btn-main-nav" id="btn-main-nav">
 				<img src="images/menu.png" alt="Navigation Button">
 			</a>
@@ -58,7 +62,7 @@
 			<ul id=nav-ul>
 				<li class="search">
 					<div class="search-bar search-bar-desktop">
-							<input type="text" id="search" name="search" placeholder="Search">
+						<input type="text" id="search-desktop" name="search" placeholder="Search">
 					</div>
 				</li>
 				<li class="nav-li"><a href="#0">Home</a></li>
@@ -66,7 +70,7 @@
 				<li class="nav-li"><a href="#0">Reviews</a></li>
 				<li class="nav-li"><a href="#0">Recipes</a></li>
 				<li class="nav-li"><a href="#0">Contact</a></li>
-				
+
 				<li class="social-link-list-item">
 					<div class="social-links social-links-mobile">
 						<ul>
@@ -95,108 +99,110 @@
 		</nav>
 	</header>
 	<div class="wrapper">
-	<main id="grid">
-		<section class="banner-images">
-			<div class="box box-01">
-				<picture>
-					<source media="(max-width: 670px)" srcset="images/mussel-small.jpg">
-					<img src="images/mussel.jpg" alt="Mussels">
-				</picture>
-				<h2 class="card-title"> Lorem ipsum dolor sit</h2>
-			</div><!-- end box -->
-			<div class="box box-02">
-				<img src="images/salad.jpg" alt="Salad">
-				<h2 class="card-title">Lorem ipsum dolor</h2>
-			</div><!-- end box -->
-			<div class="box box-03">
-				<img src="images/pancake.jpg" alt="Pancakes">
-				<h2 class="card-title">Sit Amet Consectetur</h2>
-			</div><!-- end box -->
-		</section><!-- end banner-images -->
-		<div class="sidebar">
-		<section class="recipes">
-			<h2 class="section-heading recipes-heading">LATEST RECIPES</h2>
-			<ul class="recipe-list">
-				<li class="recipe-list-item">
-					<figure>
-						<img src="images/lamb-tb.jpg" alt="Lamb">
-					</figure>
-					<p>MET CONSEC TETUR ELIT</p>
-				</li>
-				<li class="recipe-list-item1">
-					<figure>
-						<img src="images/breakfast-tb.jpg" alt="Breakfast">
-					</figure>
-					<p>ARCHI TECTO DOLORES</p>
-				</li>
-				<li class="recipe-list-item">
-					<figure>
-						<img src="images/calamari-tb.jpg" alt="Calamari">
-					</figure>
-					<p>MEXPE DITA CIATIS</p>
-				</li>
-				<li class="recipe-list-item1">
-					<figure>
-						<img src="images/steak-tb.jpg" alt="Steak">
-					</figure>
-					<p>FUGIAT EAQUE AORE</p>
-				</li>
-			</ul>
-		</section><!-- end of recipes -->
-		<section class="cuisines">
-			<h2 class="cuisines-heading">CUISINES</h2>
-			<ul class="cuisine-list">
-				<li><a href="#0">American (95)</a></li>
-                <li><a href="#0">Asian (33)</a></li>
-                <li><a href="#0">Cambodian (3)</a></li>
-                <li><a href="#0">Chinese (281)</a></li>
-                <li><a href="#0">Filipino (8)</a></li>
-                <li><a href="#0">French (40)</a></li>
-                <li><a href="#0">German (7)</a></li>
-                <li><a href="#0">Greek (29)</a></li>
-                <li><a href="#0">Indian (44)</a></li>
-                <li><a href="#0">Italian (60)</a></li>
-                <li><a href="#0">Jamaican (7)</a></li>
-                <li><a href="#0">Japanese (202)</a></li>
-                <li><a href="#0">Korean (120)</a></li>
-                <li><a href="#0">Malaysian (12)</a></li>
-                <li><a href="#0">Mediterranean (9)</a></li>
-                <li><a href="#0">Mexican (25)</a></li>
-                <li><a href="#0">Southern (14)</a></li>
-			</ul>	
-		</section><!-- end cuisines -->
-		</div>
-		<section class="blog-posts">
-			<article class="post pasta">
-				<h2 class="post-heading pasta-heading">LOREM IPSUM DOLOR SIT AMET</h2>
-				<div class="post-content post-content-pasta">
-					<p>Posted by Mike Lee on Sunday, August 25, 2013</p>
-					<img src="images/pasta.jpg" alt="Pasta">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ab aspernatur illum odio commodi nesciunt nisi eius aperiam sint</p>
-					<br>
-					<a href="#0" class="btn btn-read-more">
-						<span class="btn-text">READ MORE...</span>
-					</a>
-				</div>
-			</article>
-			<article class="post post-ramen">
-				<h2 class="post-heading ramen-heading">VEL, EAQUE QUISQUAM SIT AMET</h2>
-					<div class="post-content post-content-ramen">
-						<p>Posted by Mike Lee on Monday, July 29, 2013</p>
-						<img src="images/ramen.jpg" alt="Ramen">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ab aspernatur illum odio commodi nesciunt nisi eius aperiam sint</p>
+		<main id="grid">
+			<section class="banner-images">
+				<div class="box box-01">
+					<picture>
+						<source media="(max-width: 670px)" srcset="images/mussel-small.jpg">
+						<img src="images/mussel.jpg" alt="Mussels">
+					</picture>
+					<h2 class="card-title"> LOREM IPSUM DOLOR SIT</h2>
+				</div><!-- end box -->
+				<div class="box box-02">
+					<img src="images/salad.jpg" alt="Salad">
+					<h2 class="card-title">LOREM, IPSUM DOLOR</h2>
+				</div><!-- end box -->
+				<div class="box box-03">
+					<img src="images/pancake.jpg" alt="Pancakes">
+					<h2 class="card-title">SIT AMET CONSECTETUR</h2>
+				</div><!-- end box -->
+			</section><!-- end banner-images -->
+			<div class="sidebar">
+				<section class="recipes">
+					<h2 class="section-heading recipes-heading">LATEST RECIPES</h2>
+					<ul class="recipe-list">
+						<li class="recipe-list-item">
+							<figure>
+								<img src="images/lamb-tb.jpg" alt="Lamb">
+							</figure>
+							<p>MET CONSEC TETUR ELIT</p>
+						</li>
+						<li class="recipe-list-item1">
+							<figure>
+								<img src="images/breakfast-tb.jpg" alt="Breakfast">
+							</figure>
+							<p>ARCHI TECTO DOLORES</p>
+						</li>
+						<li class="recipe-list-item">
+							<figure>
+								<img src="images/calamari-tb.jpg" alt="Calamari">
+							</figure>
+							<p>MEXPE DITA CIATIS</p>
+						</li>
+						<li class="recipe-list-item1">
+							<figure>
+								<img src="images/steak-tb.jpg" alt="Steak">
+							</figure>
+							<p>FUGIAT EAQUE AORE</p>
+						</li>
+					</ul>
+				</section><!-- end of recipes -->
+				<section class="cuisines">
+					<h2 class="cuisines-heading">CUISINES</h2>
+					<ul class="cuisine-list">
+						<li><a href="#0">American (95)</a></li>
+						<li><a href="#0">Asian (33)</a></li>
+						<li><a href="#0">Cambodian (3)</a></li>
+						<li><a href="#0">Chinese (281)</a></li>
+						<li><a href="#0">Filipino (8)</a></li>
+						<li><a href="#0">French (40)</a></li>
+						<li><a href="#0">German (7)</a></li>
+						<li><a href="#0">Greek (29)</a></li>
+						<li><a href="#0">Indian (44)</a></li>
+						<li><a href="#0">Italian (60)</a></li>
+						<li><a href="#0">Jamaican (7)</a></li>
+						<li><a href="#0">Japanese (202)</a></li>
+						<li><a href="#0">Korean (120)</a></li>
+						<li><a href="#0">Malaysian (12)</a></li>
+						<li><a href="#0">Mediterranean (9)</a></li>
+						<li><a href="#0">Mexican (25)</a></li>
+						<li><a href="#0">Southern (14)</a></li>
+					</ul>
+				</section><!-- end cuisines -->
+			</div>
+			<section class="blog-posts">
+				<article class="post pasta">
+					<h2 class="post-heading pasta-heading">LOREM IPSUM DOLOR SIT AMET</h2>
+					<div class="post-content post-content-pasta">
+						<p>Posted by Mike Lee on Sunday, August 25, 2013</p>
+						<img src="images/pasta.jpg" alt="Pasta">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ab aspernatur illum odio
+							commodi nesciunt nisi eius aperiam sint</p>
 						<br>
 						<a href="#0" class="btn btn-read-more">
 							<span class="btn-text">READ MORE...</span>
 						</a>
 					</div>
-			</article>
-			<a class="older-posts" href="#0">
-				<img src="images/previous-btn.png" alt="posts">
-			</a>
-		</section><!-- end of blog-posts -->	
-	</main>
-</div>
+				</article>
+				<article class="post post-ramen">
+					<h2 class="post-heading ramen-heading">VEL, EAQUE QUISQUAM SIT AMET</h2>
+					<div class="post-content post-content-ramen">
+						<p>Posted by Mike Lee on Monday, July 29, 2013</p>
+						<img src="images/ramen.jpg" alt="Ramen">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ab aspernatur illum odio
+							commodi nesciunt nisi eius aperiam sint</p>
+						<br>
+						<a href="#0" class="btn btn-read-more">
+							<span class="btn-text">READ MORE...</span>
+						</a>
+					</div>
+				</article>
+				<a class="older-posts" href="#0">
+					<img src="images/previous-btn.png" alt="posts">
+				</a>
+			</section><!-- end of blog-posts -->
+		</main>
+	</div>
 
 	<footer>
 		<div class="footer">
@@ -205,11 +211,12 @@
 	</footer>
 
 
-<!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
-<script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
-<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-<script src="scripts/script.min.js?cb=1"></script>
-<!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->	
+	<!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
+	<script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
+	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+	<script src="scripts/script.min.js?cb=1"></script>
+	<!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->
 
 </body>
+
 </html>
